@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    'roboto': ['"Roboto Slab"', 'serif'],
+                    'heebo': ['"Heebo"', 'sans-serif'],
+                }
+            }
+        }
+        }
+    </script>
+</head>
+<body class="bg-gray-100">
+    <div class="max-w-[1920px] mx-auto bg-white shadow-2xl relative">
+        <header class="relative md:absolute top-0 left-0 w-full z-50 py-6 px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center max-w-[1200px] mx-auto">
+                 <div class="w-48">
+                    <img src="./Images/logo.png" alt="Agridera" class="w-full h-auto">
+                 </div>
+
+                 <div class="flex flex-col items-end space-y-6">
+                    <div class="relative w-80 border-b border-[#324950]/50 py-1">
+                        <input type="text" placeholder="Search" class="bg-transparent w-full outline-none text-[16px] text-[#324950] placeholder-[#324950]/70 font-roboto">
+                        <button class="absolute right-0 top-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-[#324950]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                            </svg>
+                        </button>
+                    </div>
+
+                 <nav class="flex flex-wrap justify-center gap-2 font-heebo font-bold text-[18px] tracking-widest text-gray-700">
+                    <a href="#" class="hover:text-green-600">Home</a>
+                    <a href="#" class="hover:text-green-600">Company Profile</a>
+                    <a href="#" class="hover:text-green-600">Products</a>
+                    <a href="#" class="hover:text-green-600">Services</a>
+                    <a href="#" class="hover:text-green-600">R & D</a>
+                    <a href="#" class="hover:text-green-600">Contact</a>
+                 </nav>
+            </div>
+        </header>
+
+        <section class="relative h-[850px] w-full overflow-hidden flex items-center justify-center">
+            <img src="./Images/bg.jpg" alt="Background" class="absolute inset-0 w-full h-full object-cover">
+
+            <div class="relative z-10 flex flex-col items-center"> 
+                <h1 class="font-roboto text-[48px] font-bold text-[#735440] tracking-normal text-center md:whitespace-nowrap">
+                    Agridera Seeds and Agriculture Ltd
+                </h1>
+
+                <a href="#" class="mt-10 bg-[#57984C] hover:bg-[#4A8B3F] text-white font-bold text-sm uppercase tracking-widest py-5 px-9 transition-colors">
+                    Read More
+                </a>
+            </div>
+        </section>
+
+        <div class="bg-white border-b border-gray-200 font-roboto">
+            <div class="container mx-auto max-w-[1920px]">
+                <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 text-center">
+                    <div class="py-9 flex flex-col items-center gap-4 hover:bg-gray-50 transition cursor-pointer group">
+                        <img src="./Images/Wheat.png" class="h-20 opacity-70 group-hover:opacity-100 transition" alt="Wheat">
+                        <span class="text-[20px] text-[#324950] tracking-wider group-hover:text-green-700">Wheat</span>
+                    </div>
+
+                    <div class="py-9 flex flex-col items-center gap-4 hover:bg-gray-50 transition cursor-pointer group">
+                        <img src="./Images/Confection Watermelon.png" class="h-20 opacity-70 group-hover:opacity-100 transition" alt="Confection Watermelon">
+                        <span class="text-[20px] text-[#324950] tracking-wider group-hover:text-green-700">Confection Watermelon</span>
+                    </div>
+
+                    <div class="py-9 flex flex-col items-center gap-4 hover:bg-gray-50 transition cursor-pointer group">
+                        <img src="./Images/Clower.png" class="h-20 opacity-70 group-hover:opacity-100 transition" alt="Clower">
+                        <span class="text-[20px] text-[#324950] tracking-wider group-hover:text-green-700">Clower</span>
+                    </div>
+
+                    <div class="py-9 flex flex-col items-center gap-4 hover:bg-gray-50 transition cursor-pointer group">
+                        <img src="./Images/Confection Sunflower.png" class="h-20 opacity-70 group-hover:opacity-100 transition" alt="Confection Sunflower">
+                        <span class="text-[20px] text-[#324950] tracking-wider group-hover:text-green-700">Confection Sunflower</span>
+                    </div>
+
+                    <div class="py-9 flex flex-col items-center gap-4 hover:bg-gray-50 transition cursor-pointer group">
+                        <img src="./Images/Tomato.png" class="h-20 opacity-70 group-hover:opacity-100 transition" alt="Tomato">
+                        <span class="text-[20px] text-[#324950] tracking-wider group-hover:text-green-700">Tomato</span>
+                    </div>
+
+                    <div class="py-9 flex flex-col items-center gap-4 hover:bg-gray-50 transition cursor-pointer group">
+                        <img src="./Images/Eggplant.png" class="h-20 opacity-70 group-hover:opacity-100 transition" alt="Eggplant">
+                        <span class="text-[20px] text-[#324950] tracking-wider group-hover:text-green-700">Eggplant P/O</span>
+                    </div>
+
+                    <div class="py-9 flex flex-col items-center gap-4 hover:bg-gray-50 transition cursor-pointer group">
+                        <img src="./Images/Ornamental Sunflower.png" class="h-20 opacity-70 group-hover:opacity-100 transition" alt="Ornamental Sunflower">
+                        <span class="text-[20px] text-[#324950] tracking-wider group-hover:text-green-700">Ornamental Sunflower</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="relative pt-20 pb-6 overflow-hidden bg-gray-100">
+            <div class="absolute inset-0 z-0">
+                <img src="./Images/Union.png" alt="" class="w-full h-full object-contain opacity-70 scale-105 max-h-[1300px]">
+            </div>
+
+            <div class="container mx-auto max-w-[1200px] relative z-10">
+                <div class="flex flex-col md:flex-row items-center gap-16 mb-32">
+                    <div class="flex-1">
+                        <h2 class="font-roboto text-[64px] font-bold text-[#324950] mb-6 pl-5">Vision</h2>
+                        <div class="flex gap-1 mb-6 pl-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-[#57984C]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="5" d="M6 18L18 6M6 6l12 12" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-[#57984C]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="5" d="M6 18L18 6M6 6l12 12" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-[#57984C]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="5" d="M6 18L18 6M6 6l12 12" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-[#57984C]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="5" d="M6 18L18 6M6 6l12 12" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-[#57984C]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="5" d="M6 18L18 6M6 6l12 12" /></svg>
+                        </div>
+                        <p class="font-roboto text-gray-600 leading-relaxed text-[20px] max-w-[500px] pl-5">
+                            We believe in long-term growth with an emphasis on the potential of emerging markets. 
+                            We also support the global need of feeding the growing population.
+                        </p>
+                    </div>
+
+                    <div class="flex-1">
+                        <div class="relative">
+                            <img src="./Images/Vision.png" alt="Vision" class="w-full object-cover shadow-2xl scale-105 translate-y-[5px] translate-x-[-11px]">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-center gap-16 mb-10">
+                    <div class="flex-1 w-full md:w-1/2 relative">
+                        <img src="./Images/Mission.png" alt="Mission" class="w-full h-auto shadow-2xl scale-100 md:translate-y-[-31px] md:translate-x-[10px]">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <button class="bg-white/90 hover:bg-white p-5 rounded-full shadow-md transition-transform hover:scale-110 group">
+                                <svg class="w-8 h-8 text-green-600 fill-current ml-1" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="flex-1">
+                        <h2 class="font-roboto text-[64px] font-bold text-[#324950] mb-6 pl-5">Mission</h2>
+                        <div class="flex gap-1 mb-6 pl-5">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-[#57984C]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="5" d="M6 18L18 6M6 6l12 12" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-[#57984C]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="5" d="M6 18L18 6M6 6l12 12" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-[#57984C]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="5" d="M6 18L18 6M6 6l12 12" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-[#57984C]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="5" d="M6 18L18 6M6 6l12 12" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-[#57984C]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="5" d="M6 18L18 6M6 6l12 12" /></svg>
+                        </div>
+                        <p class="font-roboto text-gray-600 leading-relaxed text-[20px] max-w-[520px] pl-5">
+                            Breeding and marketing seeds for advanced field crops and vegetable varieties that provide an added value to all supply chain partners.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#EDEDED] py-20 font-roboto">
+            <div class="container mx-auto max-w-[1200px] px-4">
+                <div class="text-center mb-16"> <h2 class="text-[64px] font-bold text-[#324950] mb-1">Agridera's main activities</h2>
+                    <div class="flex justify-center gap-[2px] text-[#57984C] font-bold text-[16px] tracking-tighter mt-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-[#57984C]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="5" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-[#57984C]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="5" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-[#57984C]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="5" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-[#57984C]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="5" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-[#57984C]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="5" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 -mt-20">
+                    <div class="flex flex-col items-center text-center group">
+                        <div class="h-64 flex items-end justify-center mb-8">
+                            <img src="./Images/field crop.png" alt="Field Crop" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300 translate-y-[20px]">
+                        </div>
+                        <h3 class="text-[#57984C] font-bold text-[24px] leading-tight">Open field crop seeds</h3>
+                        <div class="w-36 border-t-2 border-[#57984C] my-4 opacity-50"></div> 
+                        <p class="text-[#324950] text-[18px] leading-relaxed max-w-[250px] opacity-80">
+                            wheat, cotton, legumes, hybrid confection sunflower
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center group">
+                        <div class="h-64 flex items-end justify-center mb-8">
+                            <img src="./Images/vegetable.png" alt="Vegetable" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300 -translate-y-[20px]">
+                        </div>
+                        <h3 class="text-[#57984C] font-bold text-[24px] leading-tight">Vegetable seeds</h3>
+                        <div class="w-36 border-t-2 border-[#57984C] my-4 opacity-50"></div> 
+                        <p class="text-[#324950] text-[18px] leading-relaxed max-w-[300px] opacity-80">
+                            hybrid open field tomatoes, eggplant, onion, paprika, etc.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-col items-center text-center group">
+                        <div class="h-64 flex items-end justify-center mb-8">
+                            <img src="./Images/ornamental.png" alt="Ornamental" class="max-h-full object-contain group-hover:scale-105 transition-transform duration-300 translate-y-[0px]">
+                        </div>
+                        <h3 class="text-[#57984C] font-bold text-[24px] leading-tight">Ornamental seeds</h3>
+                        <div class="w-36 border-t-2 border-[#57984C] my-4 opacity-50"></div> 
+                        <p class="text-[#324950] text-[18px] leading-relaxed max-w-[300px] opacity-80">
+                            hybrid cut sunflowers, hybrid patio tomatoes, Bells of Irland, etc.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-[#2D3F45] text-white">
+            <div class="container mx-auto max-w-[1200px] px-4 py-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    
+                    <nav class="flex flex-wrap justify-center gap-x-12 gap-y-2 text-[16px] uppercase">
+                        <a href="#" class="hover:text-green-400 transition-colors">Profile</a>
+                        <a href="#" class="hover:text-green-400 transition-colors">Management</a>
+                        <a href="#" class="hover:text-green-400 transition-colors">Products</a>
+                        <a href="#" class="hover:text-green-400 transition-colors">R&D</a>
+                        <a href="#" class="hover:text-green-400 transition-colors">Links</a>
+                        <a href="#" class="hover:text-green-400 transition-colors">Sitemap</a>
+                        <a href="#" class="hover:text-green-400 transition-colors">Contact</a>
+                    </nav>
+
+                    <div class="flex gap-3 mt-6 md:mt-0">
+                        <a href="#" class="hover:opacity-80 transition-opacity">
+                            <img src="./Images/linkedin.png" alt="Linkedin" class="w-[31.2px] h-[31.2px] object-contain">
+                        </a>
+                        <a href="#" class="hover:opacity-80 transition-opacity">
+                            <img src="./Images/inst.png" alt="Instagram" class="w-[31.2px] h-[31.2px] object-contain">
+                        </a>
+                        <a href="#" class="hover:opacity-80 transition-opacity">
+                            <img src="./Images/youtube.png" alt="Youtube" class="w-[31.2px] h-[31.2px] object-contain">
+                        </a>
+                        <a href="#" class="hover:opacity-80 transition-opacity">
+                            <img src="./Images/twitter.png" alt="Twitter" class="w-[31.2px] h-[31.2px] object-contain">
+                        </a>
+                        <a href="#" class="hover:opacity-80 transition-opacity">
+                            <img src="./Images/facebook.png" alt="Facebook" class="w-[31.2px] h-[31.2px] object-contain">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-[#324950] border-t border-gray-600/30 py-4">
+                <div class="container mx-auto text-center">
+                    <p class="text-[14px] text-[#B9B9B9] uppercase">
+                        Agridera Seeds & Agriculture Ltd. © 2020
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
